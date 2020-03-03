@@ -1,0 +1,23 @@
+{
+  "name": "mind-game",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "bin": {
+    "brain-games": "bin/brain-games.js"
+  },
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alextula26/frontend-project-lvl1.git"
+  },
+  "author": "alextula26",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alextula26/frontend-project-lvl1/issues"
+  },
+  "homepage": "https://github.com/alextula26/frontend-project-lvl1#readme"
+}
