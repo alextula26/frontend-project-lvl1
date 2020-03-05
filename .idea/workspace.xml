@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="65997078-0154-4e85-bee1-eec2053adec2" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.eslintignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eslintrc.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/brain-games.js" beforeDir="false" afterPath="$PROJECT_DIR$/bin/brain-games.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +41,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -53,7 +60,9 @@
       <updated>1583261676674</updated>
       <workItem from="1583261678045" duration="3572000" />
       <workItem from="1583266446378" duration="3440000" />
-      <workItem from="1583349017072" duration="4008000" />
+      <workItem from="1583349017072" duration="5520000" />
+      <workItem from="1583434331383" duration="296000" />
+      <workItem from="1583434640001" duration="1468000" />
     </task>
     <servers />
   </component>
@@ -61,6 +70,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="162" y="159" key="SettingsEditor" timestamp="1583434627642">
+      <screen x="67" y="27" width="1213" height="997" />
+    </state>
+    <state x="162" y="159" key="SettingsEditor/67.27.1213.997@67.27.1213.997" timestamp="1583434627642" />
     <state x="329" y="353" key="com.intellij.ide.util.TipDialog" timestamp="1583266449976">
       <screen x="67" y="27" width="1213" height="997" />
     </state>
