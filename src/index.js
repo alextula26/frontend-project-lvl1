@@ -2,7 +2,12 @@
 
 import readlineSync from 'readline-sync';
 
-export const getName = () => readlineSync.question('May I have your name? ');
+export const greetingGame = () => {
+  console.log('Welcome to the Brain Games!');
+  return readlineSync.question('May I have your name? ');
+};
+
+export const greetingUser = (name) => `Hello, ${name}`;
 
 export const getRandom = (min, max) => Math.floor(Math.random() * (max - min)) + min;
 
@@ -19,9 +24,10 @@ export const isAnswer = (answer) => {
   return result;
 };
 
-export const even = (name) => {
+export const even = (name, message, count) => {
+  console.log(message);
   const iter = (acc) => {
-    if (acc === 3) {
+    if (acc === count) {
       return `Congratulations, ${name}!`;
     }
 
@@ -36,6 +42,50 @@ export const even = (name) => {
       console.log('Correct!');
     } else {
       return `"yes" is wrong answer ;(. Correct answer was "no".\nLet's try again, ${name}!`;
+    }
+
+    return iter(acc + 1);
+  };
+
+  return iter(0);
+};
+
+const expression = (num1, num2, operation) => {
+  switch (operation) {
+    case '+':
+      return num1 + num2;
+    case '-':
+      return num1 - num2;
+    case '*':
+      return num1 * num2;
+    default:
+      return NaN;
+  }
+};
+
+export const calc = (name, message, count) => {
+  const operationArray = ['+', '-', '*'];
+  console.log(message);
+
+  const iter = (acc) => {
+    if (acc === count) {
+      return `Congratulations, ${name}!`;
+    }
+
+    const operandOne = getRandom(10, 100);
+    const operandTwo = getRandom(10, 100);
+    const operation = operationArray[acc];
+
+    console.log(`Question: ${operandOne} ${operation} ${operandTwo}`);
+
+    const answer = readlineSync.question('Your answer: ');
+
+    const resultExpression = String(expression(operandOne, operandTwo, operation));
+
+    if (resultExpression === answer) {
+      console.log('Correct!');
+    } else {
+      return `"${answer}" is wrong answer ;(. Correct answer was "${resultExpression}".\nLet's try again, ${name}!`;
     }
 
     return iter(acc + 1);

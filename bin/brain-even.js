@@ -1,9 +1,7 @@
 #!/usr/bin/env node
-import { getName, even } from '../src/index.js';
+import { greetingGame, greetingUser, even } from '../src/index.js';
 
-console.log('Welcome to the Brain Games!');
-
-const userName = getName();
-console.log(`Hello, ${userName}!`);
-console.log('Answer "yes" if the number is even, otherwise answer "no".');
-console.log(even(userName));
+const userName = greetingGame();
+console.log(greetingUser(userName));
+const message = 'Answer "yes" if the number is even, otherwise answer "no".';
+console.log(even(userName, message, 3));
