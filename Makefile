@@ -2,9 +2,10 @@ install:
 	npm install
 
 start:
-	npx node bin/brain-games.js
-	npx node bin/brain-even.js
-	npx node bin/brain-calc.js
+	npx node src/bin/brain-games.js
+	npx node src/bin/brain-even.js
+	npx node src/bin/brain-calc.js
+	npx node src/bin/brain-gcd.js
 
 lint:
 	npx eslint .
