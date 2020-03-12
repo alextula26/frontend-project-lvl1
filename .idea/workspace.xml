@@ -4,8 +4,6 @@
     <list default="true" id="65997078-0154-4e85-bee1-eec2053adec2" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/games/progression.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/games/progression.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +72,7 @@
       <workItem from="1583769042427" duration="13355000" />
       <workItem from="1583866318235" duration="8254000" />
       <workItem from="1583955052144" duration="7013000" />
-      <workItem from="1584037251579" duration="7561000" />
+      <workItem from="1584037251579" duration="8199000" />
     </task>
     <servers />
   </component>
