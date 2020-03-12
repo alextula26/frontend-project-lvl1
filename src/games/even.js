@@ -6,14 +6,16 @@ const isEven = (number) => number % 2 === 0;
 
 const runGame = () => {
   const number = getRandomNumber(10, 100);
-  console.log(`Question: ${number}`);
-  const gameResult = (isEven(number)) ? 'yes' : 'no';
-  const answerUser = readlineSync.question('Your answer: ');
 
-  return [gameResult, answerUser];
+  console.log(`Question: ${number}`);
+
+  const gameResult = (isEven(number)) ? 'yes' : 'no';
+  const userAnswer = readlineSync.question('Your answer: ');
+
+  return [gameResult, userAnswer];
 };
 
 export default () => {
-  const descriptionGame = 'Answer "yes" if the number is even, otherwise answer "no".';
-  return evenGame(descriptionGame, runGame);
+  const gameDescription = 'Answer "yes" if the number is even, otherwise answer "no".';
+  return evenGame(gameDescription, runGame);
 };

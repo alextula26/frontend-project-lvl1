@@ -2,7 +2,7 @@ import readlineSync from 'readline-sync';
 import calcGame from '../index.js';
 import getRandomNumber from '../random.js';
 
-const getExpression = (number1, number2, operation) => {
+const calculator = (number1, number2, operation) => {
   switch (operation) {
     case '+':
       return number1 + number2;
@@ -25,13 +25,13 @@ const runGame = () => {
 
   console.log(`Question: ${number1} ${operation} ${number2}`);
 
-  const gameResult = String(getExpression(number1, number2, operation));
-  const answerUser = readlineSync.question('Your answer: ');
+  const gameResult = String(calculator(number1, number2, operation));
+  const userAnswer = readlineSync.question('Your answer: ');
 
-  return [gameResult, answerUser];
+  return [gameResult, userAnswer];
 };
 
 export default () => {
-  const descriptionGame = 'What is the result of the expression?';
-  return calcGame(descriptionGame, runGame);
+  const gameDescription = 'What is the result of the expression?';
+  return calcGame(gameDescription, runGame);
 };
