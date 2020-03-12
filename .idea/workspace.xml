@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="65997078-0154-4e85-bee1-eec2053adec2" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/bin/brain-progression.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/games/progression.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/games/calc.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/games/calc.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/games/even.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/games/even.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/games/gcd.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/games/gcd.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/games/progression.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/games/progression.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -79,7 +74,7 @@
       <workItem from="1583769042427" duration="13355000" />
       <workItem from="1583866318235" duration="8254000" />
       <workItem from="1583955052144" duration="7013000" />
-      <workItem from="1584037251579" duration="5138000" />
+      <workItem from="1584037251579" duration="7561000" />
     </task>
     <servers />
   </component>
