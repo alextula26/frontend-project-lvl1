@@ -7,15 +7,13 @@ export default (description, func, steps = 3) => {
 
   console.log(description);
 
-  const iter = (acc) => {
-    if (acc === steps) {
+  const iter = (count) => {
+    if (count === steps) {
       console.log(`Congratulations, ${userName}!`);
       return true;
     }
 
-    const gameStepResult = func();
-    const gameResult = gameStepResult[0];
-    const userAnswer = gameStepResult[1];
+    const [gameResult, userAnswer] = func();
 
     if (gameResult !== userAnswer) {
       console.log(`"${userAnswer}" is wrong answer ;(. Correct answer was "${gameResult}".\nLet's try again, ${userName}!`);
@@ -24,7 +22,7 @@ export default (description, func, steps = 3) => {
 
     console.log('Correct!');
 
-    return iter(acc + 1);
+    return iter(count + 1);
   };
 
   return iter(0);
