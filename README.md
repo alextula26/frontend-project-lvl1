@@ -21,3 +21,7 @@
 ## Launch the game arithmetic progression
 ##### brain-progression
 [![asciicast](https://asciinema.org/a/EFbYgvHtA8z5OPw9aIYQjVbFC.svg)](https://asciinema.org/a/EFbYgvHtA8z5OPw9aIYQjVbFC)
+
+## Launch the game prime number
+##### brain-prime
+[![asciicast](https://asciinema.org/a/umA607pT4Gq7J1RiXinSdtJNt.svg)](https://asciinema.org/a/umA607pT4Gq7J1RiXinSdtJNt)
