@@ -13,3 +13,11 @@
 ## Launch the game calculator
 ##### brain-calc
 [![asciicast](https://asciinema.org/a/q69vxcFZhzrHHjIa37Z2UhuE4.svg)](https://asciinema.org/a/q69vxcFZhzrHHjIa37Z2UhuE4)
+
+## Launch the game greatest common divisor
+##### brain-gcd
+[![asciicast](https://asciinema.org/a/GYbZ8lOZvOciu8Bny0bYytaj0.svg)](https://asciinema.org/a/GYbZ8lOZvOciu8Bny0bYytaj0)
+
+## Launch the game arithmetic progression
+##### brain-progression
+[![asciicast](https://asciinema.org/a/EFbYgvHtA8z5OPw9aIYQjVbFC.svg)](https://asciinema.org/a/EFbYgvHtA8z5OPw9aIYQjVbFC)

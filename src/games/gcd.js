@@ -11,8 +11,8 @@ const gcd = (number1, number2) => {
 };
 
 const runGame = () => {
-  const number1 = getRandomNumber(1, 100);
-  const number2 = getRandomNumber(1, 100);
+  const number1 = getRandomNumber(1, 50);
+  const number2 = getRandomNumber(1, 50);
 
   console.log(`Question: ${number1} ${number2}`);
 
