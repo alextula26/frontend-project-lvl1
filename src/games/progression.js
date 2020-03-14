@@ -14,9 +14,9 @@ const progression = (init, step, length) => {
   return iter(init, 0, []);
 };
 
-const setHiddenNumber = (array, index, str) => {
+const setHiddenNumber = (array, index, char) => {
   const newArray = array.slice();
-  newArray[index] = str;
+  newArray[index] = char;
   return newArray;
 };
 
