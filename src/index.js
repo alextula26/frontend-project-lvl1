@@ -1,6 +1,12 @@
 import readlineSync from 'readline-sync';
 
 export default (description, func, steps = 3) => {
+  console.log('Welcome to the Brain Games!');
+  const userName = readlineSync.question('May I have your name? ');
+  console.log(`Hello, ${userName}!`);
+
+  console.log(description);
+
   const iter = (count) => {
     if (count === steps) {
       console.log(`Congratulations, ${userName}!`);
@@ -18,12 +24,6 @@ export default (description, func, steps = 3) => {
 
     return iter(count + 1);
   };
-
-  console.log('Welcome to the Brain Games!');
-  const userName = readlineSync.question('May I have your name? ');
-  console.log(`Hello, ${userName}!`);
-
-  console.log(description);
 
   return iter(0);
 };
