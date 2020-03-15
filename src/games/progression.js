@@ -2,7 +2,7 @@ import readlineSync from 'readline-sync';
 import progressionGame from '../index.js';
 import getRandomNumber from '../random.js';
 
-const progression = (init, step, length) => {
+const createProgression = (init, step, length) => {
   const iter = (value, count, acc) => {
     if (count === length) {
       return acc;
@@ -27,7 +27,7 @@ const runGame = () => {
   const progressionStep = getRandomNumber(1, 10);
   const progressionIndex = getRandomNumber(1, 10);
 
-  const progressionArray = progression(progressionInit, progressionStep, 10);
+  const progressionArray = createProgression(progressionInit, progressionStep, 10);
   const progressionWithHiddenNumber = setHiddenNumber(progressionArray, progressionIndex, '..');
 
   console.log(`Question: ${progressionWithHiddenNumber.join(' ')}`);
