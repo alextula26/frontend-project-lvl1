@@ -1,29 +1,29 @@
 import readlineSync from 'readline-sync';
 
 export default (description, func, steps = 3) => {
-  console.log('Welcome to the Brain Games!');
-  const userName = readlineSync.question('May I have your name? ');
-  console.log(`Hello, ${userName}!`);
-
-  console.log(description);
-
-  const iter = (count) => {
+  const iter = (name, count) => {
     if (count === steps) {
-      console.log(`Congratulations, ${userName}!`);
+      console.log(`Congratulations, ${name}!`);
       return true;
     }
 
     const [gameResult, userAnswer] = func();
 
     if (gameResult !== userAnswer) {
-      console.log(`"${userAnswer}" is wrong answer ;(. Correct answer was "${gameResult}".\nLet's try again, ${userName}!`);
+      console.log(`"${userAnswer}" is wrong answer ;(. Correct answer was "${gameResult}".\nLet's try again, ${name}!`);
       return false;
     }
 
     console.log('Correct!');
 
-    return iter(count + 1);
+    return iter(name, count + 1);
   };
 
-  return iter(0);
+  console.log('Welcome to the Brain Games!');
+  const userName = readlineSync.question('May I have your name? ');
+  console.log(`Hello, ${userName}!`);
+
+  console.log(description);
+
+  return iter(userName, 0);
 };
