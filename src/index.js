@@ -1,6 +1,8 @@
 import readlineSync from 'readline-sync';
 
-export default (description, func, steps = 3) => {
+const steps = 3;
+
+export default (description, func) => {
   const iter = (name, count) => {
     if (count === steps) {
       console.log(`Congratulations, ${name}!`);

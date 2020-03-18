@@ -37,4 +37,4 @@ const initGame = () => {
   return [gameResult, gameQuestion];
 };
 
-export default () => gameEngine(gameDescription, initGame, 1);
+export default () => gameEngine(gameDescription, initGame);

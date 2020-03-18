@@ -29,4 +29,4 @@ const initGame = () => {
   return [gameResult, number];
 };
 
-export default () => gameEngine(gameDescription, initGame, 3);
+export default () => gameEngine(gameDescription, initGame);
