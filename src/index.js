@@ -7,7 +7,10 @@ export default (description, func, steps = 3) => {
       return true;
     }
 
-    const [gameResult, userAnswer] = func();
+    const [gameResult, gameQuestion] = func();
+
+    console.log(gameQuestion);
+    const userAnswer = readlineSync.question('Your answer: ');
 
     if (gameResult !== userAnswer) {
       console.log(`"${userAnswer}" is wrong answer ;(. Correct answer was "${gameResult}".\nLet's try again, ${name}!`);

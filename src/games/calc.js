@@ -1,5 +1,4 @@
-import readlineSync from 'readline-sync';
-import calcGame from '../index.js';
+import gameEngine from '../index.js';
 import getRandomNumber from '../random.js';
 
 const calculate = (number1, number2, operation) => {
@@ -17,21 +16,18 @@ const calculate = (number1, number2, operation) => {
 
 const operations = ['+', '-', '*'];
 
-const runGame = () => {
+const gameDescription = 'What is the result of the expression?';
+
+const initGame = () => {
   const number1 = getRandomNumber(10, 100);
   const number2 = getRandomNumber(10, 100);
   const operationIndex = getRandomNumber(0, operations.length - 1);
   const operation = operations[operationIndex];
 
-  console.log(`Question: ${number1} ${operation} ${number2}`);
-
   const gameResult = String(calculate(number1, number2, operation));
-  const userAnswer = readlineSync.question('Your answer: ');
+  const gameQuestion = `Question: ${number1} ${operation} ${number2}`;
 
-  return [gameResult, userAnswer];
+  return [gameResult, gameQuestion];
 };
 
-export default () => {
-  const gameDescription = 'What is the result of the expression?';
-  return calcGame(gameDescription, runGame);
-};
+export default () => gameEngine(gameDescription, initGame);
