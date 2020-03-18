@@ -32,7 +32,7 @@ const initGame = () => {
   const progressionWithHiddenNumber = setHiddenNumber(progressionArray, progressionIndex, '..');
 
   const gameResult = String(getHiddenNumber(progressionArray, progressionIndex));
-  const gameQuestion = `Question: ${progressionWithHiddenNumber.join(' ')}`;
+  const gameQuestion = progressionWithHiddenNumber.join(' ');
 
   return [gameResult, gameQuestion];
 };

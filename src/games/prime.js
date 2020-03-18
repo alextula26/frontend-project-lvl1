@@ -25,9 +25,8 @@ const initGame = () => {
   const number = getRandomNumber(1, 50);
 
   const gameResult = (isPrime(number)) ? 'yes' : 'no';
-  const gameQuestion = `Question: ${number}`;
 
-  return [gameResult, gameQuestion];
+  return [gameResult, number];
 };
 
 export default () => gameEngine(gameDescription, initGame, 3);

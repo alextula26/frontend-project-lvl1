@@ -25,7 +25,7 @@ const initGame = () => {
   const operation = operations[operationIndex];
 
   const gameResult = String(calculate(number1, number2, operation));
-  const gameQuestion = `Question: ${number1} ${operation} ${number2}`;
+  const gameQuestion = `${number1} ${operation} ${number2}`;
 
   return [gameResult, gameQuestion];
 };

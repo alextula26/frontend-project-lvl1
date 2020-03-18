@@ -16,7 +16,7 @@ const initGame = () => {
   const number2 = getRandomNumber(1, 50);
 
   const gameResult = String(gcd(number1, number2));
-  const gameQuestion = `Question: ${number1} ${number2}`;
+  const gameQuestion = `${number1} ${number2}`;
 
   return [gameResult, gameQuestion];
 };

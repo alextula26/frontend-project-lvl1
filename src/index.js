@@ -9,7 +9,7 @@ export default (description, func, steps = 3) => {
 
     const [gameResult, gameQuestion] = func();
 
-    console.log(gameQuestion);
+    console.log(`Question: ${gameQuestion}`);
     const userAnswer = readlineSync.question('Your answer: ');
 
     if (gameResult !== userAnswer) {

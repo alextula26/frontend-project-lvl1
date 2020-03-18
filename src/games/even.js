@@ -9,9 +9,8 @@ const initGame = () => {
   const number = getRandomNumber(10, 100);
 
   const gameResult = (isEven(number)) ? 'yes' : 'no';
-  const gameQuestion = `Question: ${number}`;
 
-  return [gameResult, gameQuestion];
+  return [gameResult, number];
 };
 
 export default () => gameEngine(gameDescription, initGame);
