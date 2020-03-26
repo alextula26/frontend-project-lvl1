@@ -3,17 +3,23 @@ import getRandomNumber from '../random.js';
 
 const isPrime = (number) => {
   const iter = (count) => {
-    if (count === number) {
-      return true;
-    }
     if (number % count === 0) {
       return false;
     }
+
+    if (count === Math.floor(number / 2)) {
+      return true;
+    }
+
     return iter(count + 1);
   };
 
   if (number < 2) {
     return false;
+  }
+
+  if (number === 2) {
+    return true;
   }
 
   return iter(2);
