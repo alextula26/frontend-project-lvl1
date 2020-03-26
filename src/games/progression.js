@@ -1,7 +1,7 @@
 import gameEngine from '../index.js';
 import getRandomNumber from '../random.js';
 
-const createProgression = (init, step, length) => {
+const createProgression = (start, step, length) => {
   const iter = (value, count, acc) => {
     if (count === length) {
       return acc;
@@ -10,7 +10,7 @@ const createProgression = (init, step, length) => {
     return iter(value + step, count + 1, [...acc, value]);
   };
 
-  return iter(init, 0, []);
+  return iter(start, 0, []);
 };
 
 const setHiddenNumber = (array, index, char) => {
@@ -23,18 +23,20 @@ const getHiddenNumber = (array, index) => array[index];
 
 const gameDescription = 'What number is missing in the progression?';
 
-const initGame = () => {
-  const progressionInit = getRandomNumber(1, 10);
-  const progressionStep = getRandomNumber(1, 10);
-  const progressionIndex = getRandomNumber(1, 10);
+const generateGame = () => {
+  const symbolReplace = '..';
+  const length = 10;
+  const startValue = getRandomNumber(1, length);
+  const step = getRandomNumber(1, length);
+  const hiddenIndex = getRandomNumber(1, length);
 
-  const progressionArray = createProgression(progressionInit, progressionStep, 10);
-  const progressionWithHiddenNumber = setHiddenNumber(progressionArray, progressionIndex, '..');
+  const progression = createProgression(startValue, step, length);
+  const progressionWithHiddenNumber = setHiddenNumber(progression, hiddenIndex, symbolReplace);
 
-  const gameResult = String(getHiddenNumber(progressionArray, progressionIndex));
+  const gameResult = String(getHiddenNumber(progression, hiddenIndex));
   const gameQuestion = progressionWithHiddenNumber.join(' ');
 
   return [gameResult, gameQuestion];
 };
 
-export default () => gameEngine(gameDescription, initGame);
+export default () => gameEngine(gameDescription, generateGame);

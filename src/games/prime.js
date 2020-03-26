@@ -21,12 +21,12 @@ const isPrime = (number) => {
 
 const gameDescription = '"yes" if given number is prime. Otherwise answer "no"';
 
-const initGame = () => {
-  const number = getRandomNumber(1, 50);
+const generateGame = () => {
+  const gameQuestion = getRandomNumber(1, 50);
 
-  const gameResult = (isPrime(number)) ? 'yes' : 'no';
+  const gameResult = (isPrime(gameQuestion)) ? 'yes' : 'no';
 
-  return [gameResult, number];
+  return [gameResult, gameQuestion];
 };
 
-export default () => gameEngine(gameDescription, initGame);
+export default () => gameEngine(gameDescription, generateGame);

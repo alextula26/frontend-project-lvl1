@@ -18,7 +18,7 @@ const operations = ['+', '-', '*'];
 
 const gameDescription = 'What is the result of the expression?';
 
-const initGame = () => {
+const generateGame = () => {
   const number1 = getRandomNumber(10, 100);
   const number2 = getRandomNumber(10, 100);
   const operationIndex = getRandomNumber(0, operations.length - 1);
@@ -30,4 +30,4 @@ const initGame = () => {
   return [gameResult, gameQuestion];
 };
 
-export default () => gameEngine(gameDescription, initGame);
+export default () => gameEngine(gameDescription, generateGame);

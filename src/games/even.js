@@ -5,12 +5,12 @@ const isEven = (number) => number % 2 === 0;
 
 const gameDescription = 'Answer "yes" if the number is even, otherwise answer "no".';
 
-const initGame = () => {
-  const number = getRandomNumber(10, 100);
+const generateGame = () => {
+  const gameQuestion = getRandomNumber(10, 100);
 
-  const gameResult = (isEven(number)) ? 'yes' : 'no';
+  const gameResult = (isEven(gameQuestion)) ? 'yes' : 'no';
 
-  return [gameResult, number];
+  return [gameResult, gameQuestion];
 };
 
-export default () => gameEngine(gameDescription, initGame);
+export default () => gameEngine(gameDescription, generateGame);
