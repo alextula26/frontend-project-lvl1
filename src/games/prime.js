@@ -7,7 +7,9 @@ const isPrime = (number) => {
       return false;
     }
 
-    if (count === Math.floor(number / 2)) {
+    const limit = Math.floor(number / 2);
+
+    if (count === limit) {
       return true;
     }
 
