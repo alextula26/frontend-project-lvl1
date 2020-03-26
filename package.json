@@ -1,15 +1,15 @@
 {
   "name": "brain_games",
-  "version": "1.0.7",
+  "version": "1.0.9",
   "description": "![Node CI](https://github.com/alextula26/frontend-project-lvl1/workflows/Node%20CI/badge.svg) [![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/codeclimate/codeclimate/maintainability)",
   "main": "src/index.js",
   "bin": {
-    "brain-games": "src/bin/brain-games.js",
-    "brain-even": "src/bin/brain-even.js",
-    "brain-calc": "src/bin/brain-calc.js",
-    "brain-gcd": "src/bin/brain-gcd.js",
-    "brain-progression": "src/bin/brain-progression.js",
-    "brain-prime": "src/bin/brain-prime.js"
+    "brain-games": "bin/brain-games.js",
+    "brain-even": "bin/brain-even.js",
+    "brain-calc": "bin/brain-calc.js",
+    "brain-gcd": "bin/brain-gcd.js",
+    "brain-progression": "bin/brain-progression.js",
+    "brain-prime": "bin/brain-prime.js"
   },
   "type": "module",
   "scripts": {
