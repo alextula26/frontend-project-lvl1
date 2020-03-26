@@ -1,6 +1,6 @@
 import readlineSync from 'readline-sync';
 
-const stepCount = 3;
+const stepsCount = 3;
 
 export default (description, generateGame) => {
   console.log('Welcome to the Brain Games!');
@@ -10,7 +10,7 @@ export default (description, generateGame) => {
   console.log(description);
 
   const iter = (count) => {
-    if (count === stepCount) {
+    if (count === stepsCount) {
       console.log(`Congratulations, ${userName}!`);
       return true;
     }
