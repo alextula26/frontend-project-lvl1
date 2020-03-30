@@ -17,11 +17,7 @@ const isPrime = (number) => {
       return false;
     }
 
-    if (count === limit) {
-      return true;
-    }
-
-    return iter(count + 1);
+    return count === limit ? true : iter(count + 1);
   };
 
   return iter(2);
