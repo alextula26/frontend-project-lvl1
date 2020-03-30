@@ -3,10 +3,11 @@ import getRandomNumber from '../random.js';
 
 const isPrime = (number) => {
   const iter = (count) => {
-    const limit = Math.floor(number / 2);
     if (number % count === 0) {
       return false;
     }
+
+    const limit = Math.floor(number / 2);
 
     if (count === limit) {
       return true;
