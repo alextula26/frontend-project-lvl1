@@ -13,11 +13,15 @@ const isPrime = (number) => {
   const limit = Math.floor(number / 2);
 
   const iter = (count) => {
+    if (count === limit) {
+      return true;
+    }
+
     if (number % count === 0) {
       return false;
     }
 
-    return count === limit ? true : iter(count + 1);
+    return iter(count + 1);
   };
 
   return iter(2);
