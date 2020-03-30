@@ -1,7 +1,7 @@
 {
   "name": "brain_games",
   "version": "1.0.9",
-  "description": "![Node CI](https://github.com/alextula26/frontend-project-lvl1/workflows/Node%20CI/badge.svg) [![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/codeclimate/codeclimate/maintainability)",
+  "description": "Brain Games project consists of a set of mini-games that run from the console. Games are based on user interaction and output of the game result.",
   "main": "src/index.js",
   "bin": {
     "brain-games": "bin/brain-games.js",
