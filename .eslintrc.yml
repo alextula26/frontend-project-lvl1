@@ -9,7 +9,7 @@ extends:
 
 rules:
   no-console: 0
-  max-len: ["error", 110, {
+  max-len: ["error", 120, {
     "ignoreComments": true,
     "ignoreUrls": true,
     "ignoreStrings": true,

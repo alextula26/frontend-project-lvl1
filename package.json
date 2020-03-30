@@ -1,6 +1,6 @@
 {
   "name": "brain_games",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "Brain Games project consists of a set of mini-games that run from the console. Games are based on user interaction and output of the game result.",
   "main": "src/index.js",
   "bin": {
