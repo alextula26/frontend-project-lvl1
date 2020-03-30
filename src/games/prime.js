@@ -2,8 +2,6 @@ import gameEngine from '../index.js';
 import getRandomNumber from '../random.js';
 
 const isPrime = (number) => {
-  const limit = Math.floor(number / 2);
-
   if (number < 2) {
     return false;
   }
@@ -11,6 +9,8 @@ const isPrime = (number) => {
   if (number === 2) {
     return true;
   }
+
+  const limit = Math.floor(number / 2);
 
   const iter = (count) => {
     if (number % count === 0) {
