@@ -32,7 +32,7 @@ const gameDescription = '"yes" if given number is prime. Otherwise answer "no"';
 const generateGame = () => {
   const gameQuestion = getRandomNumber(1, 50);
 
-  const gameResult = isPrime(gameQuestion) ? 'yes' : 'no';
+  const gameResult = (isPrime(gameQuestion)) ? 'yes' : 'no';
 
   return [gameResult, gameQuestion];
 };
