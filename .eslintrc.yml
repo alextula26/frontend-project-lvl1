@@ -9,11 +9,4 @@ extends:
 
 rules:
   no-console: 0
-  max-len: ["error", 120, {
-    "ignoreComments": true,
-    "ignoreUrls": true,
-    "ignoreStrings": true,
-    "ignoreTemplateLiterals": true,
-    "ignoreRegExpLiterals": true
-  }]
   import/extensions: 0 # FIXME: remove when rule will be adjusted for new nodejs version
